@@ -10,3 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: DmitryAlexandrovv/plagiarism-action@master
+        if: always()
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
