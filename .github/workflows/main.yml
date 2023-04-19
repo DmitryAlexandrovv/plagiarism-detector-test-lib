@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: DmitryAlexandrovv/plagiarism-action@master
-        if: always()
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           action-name: 'Plagiarism Report'
