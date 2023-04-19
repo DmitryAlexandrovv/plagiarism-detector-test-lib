@@ -11,4 +11,3 @@ jobs:
       - uses: DmitryAlexandrovv/plagiarism-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          action-name: 'Plagiarism Report'
