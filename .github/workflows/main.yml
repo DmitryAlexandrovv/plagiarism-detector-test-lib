@@ -13,4 +13,4 @@ jobs:
         if: always()
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          test: '123'
+          action-name: 'Plagiarism Report'
