@@ -6,4 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2         # checkout the repo
-      - run: npm install                  # install packages
+      - run: npm install    
+      - run: npm plag-folders             # run tests (configured to use jest-junit reporter)
+      - uses: actions/upload-artifact@v3  # upload test results
+        with:
+          name: plag-results
+          path: plag.json              # install packages
