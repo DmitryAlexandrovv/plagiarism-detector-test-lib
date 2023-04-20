@@ -8,7 +8,7 @@
   "type": "module",
   "scripts": {
     "plag": "plag-detector compare ./dataset/first/file1.cpp ./dataset/second/file1.cpp",
-    "plag-folders": "plag-detector compare-folders ./dataset/first;./dataset/second;./dataset/third file1.cpp"
+    "plag-folders": "plag-detector compare-folders --folders ./dataset/first;./dataset/second;./dataset/third --fileName file1.cpp"
   },
   "devDependencies": {
     "xml-js": "^1.6.11"
