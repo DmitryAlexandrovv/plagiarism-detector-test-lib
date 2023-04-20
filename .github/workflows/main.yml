@@ -9,5 +9,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: DmitryAlexandrovv/plagiarism-action@master
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
