@@ -2,7 +2,7 @@ name: 'CI'
 on:
   push:
 jobs:
-  Build:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2         # checkout the repo
@@ -11,4 +11,16 @@ jobs:
       - uses: actions/upload-artifact@v3  # upload test results
         with:
           name: plag-results
-          path: plag.json              # install packages
+          path: plag.json                 # install packages
+  plag-reporter:
+    name: Plagiarism report
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - name: Show results
+      uses: actions/download-artifact@v3
+      with: 
+        name: plag-results
+    - name: Test artifact download
+      run: ls -R
+    - uses: DmitryAlexandrovv/plagiarism-action@master
