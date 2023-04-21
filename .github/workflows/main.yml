@@ -8,4 +8,10 @@ jobs:
   report:
     runs-on: ubuntu-latest
     steps:
+      - name: Show results
+        uses: actions/download-artifact@v3
+        with: 
+          name: plag-results
+      - name: Test artifact download
+        run: ls -R
       - uses: DmitryAlexandrovv/plagiarism-action@master
