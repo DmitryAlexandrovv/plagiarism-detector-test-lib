@@ -21,4 +21,5 @@ jobs:
       uses: actions/download-artifact@v3
       with: 
         name: plag-results
+    - name: Print results
       uses: DmitryAlexandrovv/plagiarism-action@master
