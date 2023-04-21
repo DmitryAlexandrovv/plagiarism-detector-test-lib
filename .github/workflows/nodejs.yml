@@ -22,4 +22,4 @@ jobs:
       with: 
         name: plag-results
     - name: Test artifact download
-    - uses: DmitryAlexandrovv/plagiarism-action@master
+      uses: DmitryAlexandrovv/plagiarism-action@master
