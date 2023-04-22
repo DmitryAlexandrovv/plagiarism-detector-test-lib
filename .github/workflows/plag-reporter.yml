@@ -22,4 +22,4 @@ jobs:
       with: 
         name: plag-results
     - name: Print results
-      uses: DmitryAlexandrovv/plagiarism-action@master
+      uses: DmitryAlexandrovv/plagiarism-reporter@master
