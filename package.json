@@ -12,8 +12,5 @@
   },
   "devDependencies": {
     "xml-js": "^1.6.11"
-  },
-  "dependencies": {
-    "plagiarism-detector": "^0.4.6"
   }
 }
